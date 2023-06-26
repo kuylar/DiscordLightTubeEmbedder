@@ -10,7 +10,7 @@ DiscordClient client = new(new DiscordConfiguration
 });
 
 SlashCommandsExtension sce = client.UseSlashCommands();
-sce.RegisterCommands(typeof(EmbedCommands), 917263628846108683);
+sce.RegisterCommands(typeof(EmbedCommands));
 
 client.Ready += (sender, eventArgs) =>
 {
